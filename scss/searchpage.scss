@@ -1,0 +1,16 @@
+@import "./_layout";
+
+.theimg-thumbnail{
+  height:150px;
+  width:150px;
+}
+
+.bg-primary img,
+.bg-info img {
+  float: right;
+  margin-top:-30px
+}
+
+p.bg{
+  height: 200px
+}
