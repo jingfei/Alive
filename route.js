@@ -33,6 +33,14 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/register.hbs",
     "filename": "./docs/register.html"
+  },
+  {
+    data: {
+      "title": "Alive - login page"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/login.hbs",
+    "filename": "./docs/login.html"
   }
 ];
 
