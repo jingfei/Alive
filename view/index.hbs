@@ -5,13 +5,18 @@
 	</head>
 	<body>
     {{> header}}
-    <div class="row">
+    <div id="header" class="row">
     <div class="col-md-4">
     </div>
     <div draggable=""class="col-md-4">
       <h4 class="title">Highlights</h4>
-      </div>
-      <div class="col-md-4">
+      <div class="homepage">
+        <p></p></br>
+        <p></p></br>
+        <p></p></br>
+        <p></p></br>
+        <p></p></br>
+        <p></p></br>
         <a class="btn btn-no-border share-btn-fb" onclick="window.open('https://www.facebook.com/','fb','width=626,height=436');return false;">
   								<i class="fa fa-facebook"></i>
                   <img src="images/facebookicon.png"height="30px"weight="30px">
@@ -19,14 +24,14 @@
                 <i class="fa fa facebook">
                 </i>
               </a>
-                  <a class="btn btn-no-border share-btn-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=hello%20world&via=twitterdev&original_referer=https://dev.twitter.com/web/tweet-button/web-intent','tweet','width=626,height=436');return:false;">
+                  <a class="btn btn-no-border share-btn-twitter" onclick="window.open('https://twitter.com/','tweet','width=626,height=436');return:false;">
   								<i class="fa fa-twitter"></i>
                   <img src="images/twitter-128.png"height="30px"weight="30px">
   								<span class="share-btn-text">Tweet</span>
   							</a>
                 <i class="fa fa-twitter"></i>
               </i>
-              <a class="btn btn-no-border share-btn-google homepage" onclick="window.open('https://plus.google.com/up/accounts/upgrade/?continue=https://plus.google.com/share?url%3Dhttp://www.monster.com/career-advice/article/companies-hiring-year-2016-1216?re%253Dswoop','google+','width=626,height=436');return:false;">
+              <a class="btn btn-no-border share-btn-google" onclick="window.open('https://plus.google.com/?hl=zh_tw','google+','width=626,height=436');return:false;">
   								<i class="fa fa-google-plus"></i>
                   <img src="images/google-plus-flat.png"height="30px"weight="30px">
   								<span class="share-btn-text">Share</span>
@@ -34,6 +39,7 @@
                 <i class="fa fa-google-plus"></i>
             </div>
     </div>
+  </div>
     {{> footer }}
   </body>
 </html>
