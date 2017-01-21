@@ -7,8 +7,8 @@
 }
 
 html, body {
-  color: #42413E;
-  background: $bg-color;
+  color: $black;
+  background: $light-gray;
   font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑","Microsoft YaHei", Helvetica, 'sans-serif';
 }
 
@@ -16,11 +16,13 @@ body {
   padding-top: 20px;
 
   a {
-    color: #CE5024;
+    color: $blue;
     &:hover {
-      color: #CE5024;
+      color: $blue;
       opacity: 0.8;
+    }
+  }
+  h1, h2, h3, h4, h5, h6{
+    color: $gray;
   }
 }
-}
-
