@@ -6,22 +6,99 @@
 	<body>
     {{> header}}
     <h1>Search Result of ()</h1>
-    <p class="bg-primary bg">Search Result 1<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..."class="theimg-thumbnail">
-    </p>
-    <p class="bg-info bg">Search Result 2<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..."class="theimg-thumbnail">
-    </p>
-    <p class="bg-primary bg">Search Result 3<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..."class="theimg-thumbnail">
-    </p>
-    <p class="bg-info bg">Search Result 4<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..."class="theimg-thumbnail">
-    </p>
+    <div class="sort-by">
+      <h2>Sort By</h2>
+      <button type="button" class="btn btn-secondary btn-lg">Most Popular</button>
+      <button type="button" class="btn btn-secondary btn-lg">Most Recent</button>
+      <button type="button" class="btn btn-secondary btn-lg">Most Views</button>
+    </div>
+    <div class="row">
+      <div class="col-md-3 filter">
+        <h2>Filter results</h2>
+        <p>
+        <select class="form-control">
+          <option disabled>Location</option>
+          <option>Changhua</option>
+          <option>Chiayi</option>
+          <option>Douliu</option>
+          <option>Hsinchu</option>
+          <option>Hualien</option>
+          <option>Kaohsiung</option>
+          <option>Keelung</option>
+          <option>Magong</option>
+          <option>Miaoli</option>
+          <option>Nantou</option>
+          <option>New Taipei</option>
+          <option>Pingtung</option>
+          <option>Puzi</option>
+          <option>Taibao</option>
+          <option>Taichung</option>
+          <option>Tainan</option>
+          <option>Taipei</option>
+          <option>Taitung</option>
+          <option>Taoyuan</option>
+          <option>Toufen</option>
+          <option>Yilan</option>
+          <option>Yuanlin</option>
+          <option>Zhubei</option>
+        </select>
+        <select class="form-control">
+          <option disabled>Weekday</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </select>
+        <select class="form-control">
+          <option disabled>Time</option>
+          <option>8:00</option>
+          <option>8:30</option>
+          <option>9:00</option>
+          <option>9:30</option>
+          <option>10:00</option>
+          <option>10:30</option>
+          <option>11:00</option>
+          <option>11:30</option>
+          <option>12:00</option>
+          <option>13:00</option>
+          <option>13:30</option>
+          <option>14:00</option>
+          <option>14:30</option>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>16:00</option>
+          <option>16:30</option>
+          <option>17:00</option>
+          <option>17:30</option>
+          <option>18:00</option>
+          <option>18:30</option>
+          <option>19:00</option>
+          <option>19:30</option>
+          <option>20:00</option>
+          <option>20:30</option>
+          <option>21:00</option>
+        </select>
+      </div>
+      <div class="col-md-9">
+        <p class="bg-primary bg">Search Result 1<br/>Job Title: Age: <br/>Location: <br/>
+          <button type="button" class="btn btn-default">Click for more info</button>
+          <img src="..."class="theimg-thumbnail">
+        </p>
+        <p class="bg-info bg">Search Result 2<br/>Job Title: Age: <br/>Location: <br/>
+          <button type="button" class="btn btn-default">Click for more info</button>
+          <img src="..."class="theimg-thumbnail">
+        </p>
+        <p class="bg-primary bg">Search Result 3<br/>Job Title: Age: <br/>Location: <br/>
+          <button type="button" class="btn btn-default">Click for more info</button>
+        <img src="..."class="theimg-thumbnail">
+        </p>
+      <p class="bg-info bg">Search Result 4<br/>Job Title: Age: <br/>Location: <br/>
+        <button type="button" class="btn btn-default">Click for more info</button>
+        <img src="..."class="theimg-thumbnail">
+      </p>
     <p class="bg-primary bg">Search Result 5<br/>Job Title: Age: <br/>Location: <br/>
       <button type="button" class="btn btn-default">Click for more info</button>
       <img src="..." class="theimg-thumbnail">
@@ -30,6 +107,15 @@
       <button type="button" class="btn btn-default">Click for more info</button>
       <img src="..." class="theimg-thumbnail">
     </p>
+    <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+  </div>
+  </div>
     {{> footer }}
   </body>
 </html>
