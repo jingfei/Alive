@@ -1,7 +1,12 @@
+@import "./_color";
+
 #footer{
-  background-color: black;
+  background-color: #2b3a42;
   color: white;
   padding: 10px;
+  .col-md-3 h3{
+    color: white;
+  }
 }
 
 .btn-circle {

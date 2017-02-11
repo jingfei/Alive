@@ -1,9 +1,11 @@
-.col-md-3{
-  color: #d6edd0;
+@import "./_color";
+
+.bar h1 {
+  color: #3dabaf;
 }
 
-.col-md-6{
-  vertical-align: middle;
+#header {
+  background-color: $light-gray;
 }
 
 .form-inline .input-group {
