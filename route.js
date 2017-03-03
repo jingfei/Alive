@@ -8,7 +8,7 @@ route = [
     },
     "partials": './partials.js',
     "layout":  "./view/index.hbs",
-    "filename": "./docs/index.html"
+    "filename": "./docs/index.php"
   },
   {
     data: {
@@ -16,7 +16,7 @@ route = [
     },
     "partials": './partials.js',
     "layout":  "./view/searchpage.hbs",
-    "filename": "./docs/searchpage.html"
+    "filename": "./docs/searchpage.php"
   },
   {
     data: {
@@ -24,7 +24,7 @@ route = [
     },
     "partials": './partials.js',
     "layout":  "./view/detail.hbs",
-    "filename": "./docs/detail.html"
+    "filename": "./docs/detail.php"
   },
   {
     data: {
@@ -32,7 +32,7 @@ route = [
     },
     "partials": './partials.js',
     "layout":  "./view/register.hbs",
-    "filename": "./docs/register.html"
+    "filename": "./docs/register.php"
   },
   {
     data: {
@@ -40,7 +40,7 @@ route = [
     },
     "partials": './partials.js',
     "layout":  "./view/login.hbs",
-    "filename": "./docs/login.html"
+    "filename": "./docs/login.php"
   }
 ];
 
