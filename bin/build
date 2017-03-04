@@ -2,6 +2,7 @@
 
 var core = require('canner-core');
 var argv = require('minimist')(process.argv.slice(2));
+var exec = require('child_process').exec;
 
 var fs = require('fs-extra');
 var path = require('path');
@@ -21,11 +22,16 @@ function build(load, w) {
   if(!w) {
 
     // build
-    fn = core.build(pages, {
-      cwd: json_root,
-      output: json_root,
-      minify: minify
-    });
+    fn = 
+      core.build(pages, {
+            cwd: json_root,
+            output: json_root,
+            minify: minify
+          })
+          .then(function(){
+            exec("sed -i '' -- 's/<\!--\?[pP][hH][pP]/<?php/g' docs/*.php");
+            exec("sed -i '' -- 's/\?-->/?>/g' docs/*.php");
+          });
 
   } else {
 
@@ -40,4 +46,5 @@ function build(load, w) {
       }
     });
   }
+
 };
