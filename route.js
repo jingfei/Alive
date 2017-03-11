@@ -36,11 +36,35 @@ route = [
   },
   {
     data: {
+      "title": "Alive - setting page"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/setting.hbs",
+    "filename": "./docs/setting.php"
+  },
+  {
+    data: {
       "title": "Alive - login page"
     },
     "partials": './partials.js',
     "layout":  "./view/login.hbs",
     "filename": "./docs/login.php"
+  },
+  {
+    data: {
+      "title": "Alive - post job page"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/postjob.hbs",
+    "filename": "./docs/postjob.php"
+  },
+  {
+    data: {
+      "title": "Alive - profile page"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/profile.hbs",
+    "filename": "./docs/profile.php"
   }
 ];
 
