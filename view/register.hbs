@@ -2,48 +2,69 @@
   <head>
     {{> head}}
     <link rel="stylesheet" href="css/register.scss">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
 	{{> header}}
+    <?php
+    function handlename($data){
+      $data= trim($data);
+      $data= htmlspecialchars($data);
+      return $data;
+    }
+
+      if($_SERVER[REQUEST_METHOD]== POST){
+        $firstname = handlename($_POST["firstname"]);
+        $lastname = handlename($_POST["lastname"]);
+        $email= handlename($_POST["email"]);
+        $password= handlename($_POST[password])
+        $phonenumber= handlename($_POST[phonenumber])
+        $birthday= handlename($_POST[birthday])
+        if(empty($firstname) || empty($lastname) || empty($email) ||empty($password) ||empty($phonenumber) ||empty($birthday)){
+          echo '<script>alert("please fill in the information");</script>';
+        }
+      }
+    ?>
     <div id="Registration">
       <h1>Register for Alive</h1>
       <h2>Sign Up for more!</h2>
-      <form class="form-inline" id="name">
+      <form class="form-inline" id="name" method="post">
         <div class="form-group">
           <label for="exampleInputName2">First Name</label>
-          <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name">
-        </div>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name" name="firstname">
+        </div><br/>
         <div class="form-group">
           <label for="exampleInputName2">Last Name</label>
-          <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name">
-        </div>
-      </form>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
+        </div><br/>
       <div class="form-group row">
         <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
         <div class="col-xs-10">
-          <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+          <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input" name="email">
         </div>
-      </div>
+      </div><br/>
       <div class="form-group row">
         <label for="example-password-input" class="col-xs-2 col-form-label">Password</label>
         <div class="col-xs-10">
-          <input class="form-control" type="password" value="hunter2" id="example-password-input">
+          <input class="form-control" type="password" value="hunter2" id="example-password-input" name="password">
         </div>
-      </div>
+      </div><br/>
       <div class="form-group row">
-        <label for="example-tel-input" class="col-xs-2 col-form-label">Telephone</label>
+        <label for="example-tel-input" class="col-xs-2 col-form-label">Phone number</label>
         <div class="col-xs-10">
-          <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+          <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input" name="phonenumber">
         </div>
-      </div>
+      </div><br/>
       <div class="form-group row">
         <label for="example-date-input" class="col-xs-2 col-form-label">Birthday</label>
         <div class="col-xs-10">
-          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+          <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input" name="birthday">
         </div>
-      </div>
-    <button type="button" class="btn btn-outline-primary" id="submit">Submit</button>
+      </div><br/>
+      <input type="submit" />
+    </form>
     </div>
+
   {{> footer }}
   </body>
 </html>
