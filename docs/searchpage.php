@@ -2,9 +2,9 @@
     <title>Alive - Apperciate Love In Volunteering Everyday</title>    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <link rel="stylesheet" href="homepage.css">  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <script>$('.dropdown-toggle').dropdown()</script>    <link rel="stylesheet" href="css/searchpage.css">
 	</head>
 	<body>
-    <nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>    <h1>Search Result of ()</h1>
+    <nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>    <h3>Search Result of ()</h3>
     <div class="sort-by">
-      <h2>Sort By</h2>
+      <h4>Sort By</h4>
       <button type="button" class="btn btn-secondary btn-lg">Most Popular</button>
       <button type="button" class="btn btn-secondary btn-lg">Most Recent</button>
       <button type="button" class="btn btn-secondary btn-lg">Most Views</button>
@@ -13,72 +13,86 @@
       <div class="col-md-3 filter">
         <h2>Filter results</h2>
         <p>
-        <select class="form-control">
-          <option disabled="">Location</option>
-          <option>Changhua</option>
-          <option>Chiayi</option>
-          <option>Douliu</option>
-          <option>Hsinchu</option>
-          <option>Hualien</option>
-          <option>Kaohsiung</option>
-          <option>Keelung</option>
-          <option>Magong</option>
-          <option>Miaoli</option>
-          <option>Nantou</option>
-          <option>New Taipei</option>
-          <option>Pingtung</option>
-          <option>Puzi</option>
-          <option>Taibao</option>
-          <option>Taichung</option>
-          <option>Tainan</option>
-          <option>Taipei</option>
-          <option>Taitung</option>
-          <option>Taoyuan</option>
-          <option>Toufen</option>
-          <option>Yilan</option>
-          <option>Yuanlin</option>
-          <option>Zhubei</option>
-        </select>
-        <select class="form-control">
-          <option disabled="">Weekday</option>
-          <option>Monday</option>
-          <option>Tuesday</option>
-          <option>Wednesday</option>
-          <option>Thursday</option>
-          <option>Friday</option>
-          <option>Saturday</option>
-          <option>Sunday</option>
-        </select>
-        <select class="form-control">
-          <option disabled="">Time</option>
-          <option>8:00</option>
-          <option>8:30</option>
-          <option>9:00</option>
-          <option>9:30</option>
-          <option>10:00</option>
-          <option>10:30</option>
-          <option>11:00</option>
-          <option>11:30</option>
-          <option>12:00</option>
-          <option>13:00</option>
-          <option>13:30</option>
-          <option>14:00</option>
-          <option>14:30</option>
-          <option>15:00</option>
-          <option>15:30</option>
-          <option>16:00</option>
-          <option>16:30</option>
-          <option>17:00</option>
-          <option>17:30</option>
-          <option>18:00</option>
-          <option>18:30</option>
-          <option>19:00</option>
-          <option>19:30</option>
-          <option>20:00</option>
-          <option>20:30</option>
-          <option>21:00</option>
-        </select>
-      </p></div>
+        </p><div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Location (City) <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Changhua</a></li>
+            <li><a href="#">Chiayi</a></li>
+            <li><a href="#">Douliu</a></li>
+            <li><a href="#">Hsinchu</a></li>
+            <li><a href="#">Hualien</a></li>
+            <li><a href="#">Kaohsiung</a></li>
+            <li><a href="#">Keelung</a></li>
+            <li><a href="#">Magong</a></li>
+            <li><a href="#">Miali</a></li>
+            <li><a href="#">Nantou</a></li>
+            <li><a href="#">New Taipei</a></li>
+            <li><a href="#">Pingtung</a></li>
+            <li><a href="#">Puzi</a></li>
+            <li><a href="#">Taibao</a></li>
+            <li><a href="#">Taichung</a></li>
+            <li><a href="#">Tainan</a></li>
+            <li><a href="#">Taipei</a></li>
+            <li><a href="#">Taitung</a></li>
+            <li><a href="#">Taoyuan</a></li>
+            <li><a href="#">Toufen</a></li>
+            <li><a href="#">Yilan</a></li>
+            <li><a href="#">Yuanlin</a></li>
+            <li><a href="#">Zhubei</a></li>
+          </ul>
+        </div><br>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Weekday <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Monday</a></li>
+            <li><a href="#">Tuesday</a></li>
+            <li><a href="#">Wednesday</a></li>
+            <li><a href="#">Thursday</a></li>
+            <li><a href="#">Friday</a></li>
+            <li><a href="#">Saturday</a></li>
+            <li><a href="#">Sunday</a></li>
+          </ul>
+        </div><br>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Time <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">8:00</a></li>
+            <li><a href="#">8:30</a></li>
+            <li><a href="#">9:00</a></li>
+            <li><a href="#">9:30</a></li>
+            <li><a href="#">10:00</a></li>
+            <li><a href="#">10:30</a></li>
+            <li><a href="#">11:00</a></li>
+            <li><a href="#">11:30</a></li>
+            <li><a href="#">12:00</a></li>
+            <li><a href="#">12:30</a></li>
+            <li><a href="#">13:00</a></li>
+            <li><a href="#">13:30</a></li>
+            <li><a href="#">14:00</a></li>
+            <li><a href="#">14:30</a></li>
+            <li><a href="#">15:00</a></li>
+            <li><a href="#">15:30</a></li>
+            <li><a href="#">16:00</a></li>
+            <li><a href="#">16:30</a></li>
+            <li><a href="#">17:00</a></li>
+            <li><a href="#">17:30</a></li>
+            <li><a href="#">18:00</a></li>
+            <li><a href="#">18:30</a></li>
+            <li><a href="#">19:00</a></li>
+            <li><a href="#">19:30</a></li>
+            <li><a href="#">20:00</a></li>
+            <li><a href="#">20:30</a></li>
+            <li><a href="#">21:00</a></li>
+            <li><a href="#">21:30</a></li>
+          </ul>
+      </div>
+      </div>
       <div class="row col-md-9">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
