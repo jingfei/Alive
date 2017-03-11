@@ -1,18 +1,19 @@
 @import "./_color";
 
-.bar h1 {
-  color: #3dabaf;
-}
+.navbar-default{
+  border: none;
+  background-color: transparent;
+  .navbar-brand{
+    color: $green;
+    font-size: 30px;
+  }
+  .navbar-nav {
+    background-color: transparent;
 
-#header {
-  background-color: $light-gray;
-}
+    & > li.active {
+      border-bottom: 1px solid black;
+      & > a { background-color: transparent; }
+    }
+  }
 
-.form-inline .input-group {
-  margin-top:20px;
-  margin-bottom: 10px;
-}
-
-#navbar {
-  width: 100%;
 }
