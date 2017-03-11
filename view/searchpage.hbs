@@ -16,32 +16,38 @@
       <div class="col-md-3 filter">
         <h2>Filter results</h2>
         <p>
-        <select class="form-control">
-          <option disabled>Location</option>
-          <option>Changhua</option>
-          <option>Chiayi</option>
-          <option>Douliu</option>
-          <option>Hsinchu</option>
-          <option>Hualien</option>
-          <option>Kaohsiung</option>
-          <option>Keelung</option>
-          <option>Magong</option>
-          <option>Miaoli</option>
-          <option>Nantou</option>
-          <option>New Taipei</option>
-          <option>Pingtung</option>
-          <option>Puzi</option>
-          <option>Taibao</option>
-          <option>Taichung</option>
-          <option>Tainan</option>
-          <option>Taipei</option>
-          <option>Taitung</option>
-          <option>Taoyuan</option>
-          <option>Toufen</option>
-          <option>Yilan</option>
-          <option>Yuanlin</option>
-          <option>Zhubei</option>
-        </select>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Changhua</a></li>
+            <li><a href="#">Chiayi</a></li>
+            <li><a href="#">Douliu</a></li>
+            <li><a href="#">Hsinchu</a></li>
+            <li><a href="#">Hualien</a></li>
+            <li><a href="#">Kaohsiung</a></li>
+            <li><a href="#">Keelung</a></li>
+            <li><a href="#">Magong</a></li>
+            <li><a href="#">Miali</a></li>
+            <li><a href="#">Nantou</a></li>
+            <li><a href="#">New Taipei</a></li>
+            <li><a href="#">Pingtung</a></li>
+            <li><a href="#">Puzi</a></li>
+            <li><a href="#">Taibao</a></li>
+            <li><a href="#">Taichung</a></li>
+            <li><a href="#">Tainan</a></li>
+            <li><a href="#">Taipei</a></li>
+            <li><a href="#">Taitung</a></li>
+            <li><a href="#">Taoyuan</a></li>
+            <li><a href="#">Toufen</a></li>
+            <li><a href="#">Yilan</a></li>
+            <li><a href="#">Yuanlin</a></li>
+            <li><a href="#">Zhubei</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
         <select class="form-control">
           <option disabled>Weekday</option>
           <option>Monday</option>
@@ -82,38 +88,105 @@
           <option>21:00</option>
         </select>
       </div>
-      <div class="col-md-9">
-        <p class="bg-primary bg">Search Result 1<br/>Job Title: Age: <br/>Location: <br/>
-          <button type="button" class="btn btn-default">Click for more info</button>
-          <img src="..."class="theimg-thumbnail">
-        </p>
-        <p class="bg-info bg">Search Result 2<br/>Job Title: Age: <br/>Location: <br/>
-          <button type="button" class="btn btn-default">Click for more info</button>
-          <img src="..."class="theimg-thumbnail">
-        </p>
-        <p class="bg-primary bg">Search Result 3<br/>Job Title: Age: <br/>Location: <br/>
-          <button type="button" class="btn btn-default">Click for more info</button>
-        <img src="..."class="theimg-thumbnail">
-        </p>
-      <p class="bg-info bg">Search Result 4<br/>Job Title: Age: <br/>Location: <br/>
-        <button type="button" class="btn btn-default">Click for more info</button>
-        <img src="..."class="theimg-thumbnail">
-      </p>
-    <p class="bg-primary bg">Search Result 5<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..." class="theimg-thumbnail">
-    </p>
-    <p class="bg-info bg">Search Result 6<br/>Job Title: Age: <br/>Location: <br/>
-      <button type="button" class="btn btn-default">Click for more info</button>
-      <img src="..." class="theimg-thumbnail">
-    </p>
-    <ul class="pagination">
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-  </ul>
+      <div class="row col-md-9">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 1</h3>
+              <p>Job title: </br> Age: </br> Location: </br></p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 2</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 3</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 4</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 5</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 6</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 7</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 8</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 9</h3>
+              <p>Job title: </br> Age: </br> Location:</p>
+              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+      </div>
   </div>
   </div>
     {{> footer }}

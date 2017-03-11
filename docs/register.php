@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
+<<<<<<< Updated upstream
 	<nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>    <?php
     function handlename($data){
       $data= trim($data);
@@ -22,6 +23,11 @@
         }
       }
     ?&gt;
+=======
+	  <div id="header">    <div id="navbar" class="row">      <div class="col-md-3 bar">        <h1>Alive</h1>      </div>      <div class="form-inline col-md-5 row">          <!---search box--->        <div class="input-group col-md-4">          <input type="text" class="form-control" placeholder="Keywords">        </div>        <div class="input-group col-md-4">          <input type="text" class="form-control" placeholder="Location">          <span class="input-group-btn">            <button class="btn btn-default" type="button">Search</button>          </span>        </div>      </div>      <div class"col-md-4"="">        <button class="btn btn-default" type="button">Login</button>        <button class="btn btn-default" type="button">Register</button>      </div>    </div>      <nav class="navbar navbar-default">      <div class="container-fluid">        <div class="navbar-header">          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">            <span class="sr-only">Toggle navigation</span>            <span class="icon-bar"></span>            <span class="icon-bar"></span>            <span class="icon-bar"></span>          </button>          <a class="navbar-brand" href="#">Home</a>        </div>        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          <ul class="nav navbar-nav">            <li class="active"><a href="#">Job Resume<span class="sr-only">(current)</span></a></li>            <li><a href="#">Career Resources</a></li>          </ul>          <form class="navbar-form navbar-left">            <div class="form-group">              <input type="text" class="form-control" placeholder="Search">            </div>            <button type="submit" class="btn btn-default">Search</button>          </form>          <ul class="nav navbar-nav navbar-right">            <li><a href="#">About us</a></li>          </ul>        </div>      </div>    </nav>  </div>    <?php
+    include "./php/register.php"
+    ?>
+>>>>>>> Stashed changes
     <div id="Registration">
       <h1>Register for Alive</h1>
       <h2>Sign Up for more!</h2>
