@@ -19,6 +19,7 @@
         <div id="detail-agerequirement">Age Requirement:</div><div>15years old - 19 years old</div><br>
         <div id="detail-organizationname">Organization Name:</div><div>blah hostipal</div><br>
         <div id="detail-address">Address:</div> <div>2847 University Street,Seattle, WA </div><br>
+        <div id="detail-worktime">When:</div> <div>Monday-Friday 2:00pm-3:30pm</div><br>
         <div id="detail-jobdescription">Job Description:</div><div>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</div>
       </div>
       <div class="col-md-5">
