@@ -6,38 +6,38 @@
 	<nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>    <?php
     include "./php/register.php"
     ?>
-    <div id="Registration">
+    <div id="Registration" style="text-align:center">
       <h1>Register for Alive</h1>
       <h2>Sign Up for more!</h2>
       <form class="form-inline" id="name" method="post">
         <div class="form-group">
-          <label for="exampleInputName2">First Name</label>
+          <p>First Name</p>
           <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name" name="firstname">
         </div><br>
         <div class="form-group">
-          <label for="exampleInputName2">Last Name</label>
+          <p>Last Name</p>
           <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
         </div><br>
       <div class="form-group row">
-        <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
+        <p>Email</p>
         <div class="col-xs-10">
           <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input" name="email">
         </div>
       </div><br>
       <div class="form-group row">
-        <label for="example-password-input" class="col-xs-2 col-form-label">Password</label>
+        <p>Password</p>
         <div class="col-xs-10">
           <input class="form-control" type="password" value="hunter2" id="example-password-input" name="password">
         </div>
       </div><br>
       <div class="form-group row">
-        <label for="example-tel-input" class="col-xs-2 col-form-label">Phone number</label>
+        <p>Phone number</p>
         <div class="col-xs-10">
           <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input" name="phonenumber">
         </div>
       </div><br>
       <div class="form-group row">
-        <label for="example-date-input" class="col-xs-2 col-form-label">Birthday</label>
+        <p>Birthday</p>
         <div class="col-xs-10">
           <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input" name="birthday">
         </div>
