@@ -9,6 +9,7 @@
     <div id="Registration" style="text-align:center">
       <h1>Register for Alive</h1>
       <h2>Sign Up for more!</h2>
+      <div id="Registration-forms">
       <form class="form-inline" id="name" method="post">
         <div class="form-group">
           <p>First Name</p>
@@ -44,6 +45,7 @@
       </div><br>
       <input type="submit">
     </form>
+  </div>
     </div>
 
         <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>  

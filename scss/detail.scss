@@ -1,3 +1,5 @@
+@import "./_layout";
+
 #detail-home {
   padding-left: 10px;
 }
@@ -5,7 +7,7 @@
   text-align: center;
 }
 
-#detail-phonenumber,#detail-agerequirement,#detail-organizationname,#detail-address,#detail-jobdescription,#detail-worktime{
+#detail-phonenumber,#detail-agerequirement,#detail-organizationname,#detail-address,#detail-jobdescription,#detail-worktime,#detail-website{
   font-weight: bold;
 }
 .content.active{

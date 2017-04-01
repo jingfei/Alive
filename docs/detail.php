@@ -20,6 +20,7 @@
         <div id="detail-organizationname">Organization Name:</div><div>blah hostipal</div><br>
         <div id="detail-address">Address:</div> <div>2847 University Street,Seattle, WA </div><br>
         <div id="detail-worktime">When:</div> <div>Monday-Friday 2:00pm-3:30pm</div><br>
+        <div id="detail-website">Website:</div><div><a href="https://www.facebook.com/profile.php?id=713232701" target="_blank">https://www.facebook.com/profile.php?id=713232701</a></div><br>
         <div id="detail-jobdescription">Job Description:</div><div>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</div>
       </div>
       <div class="col-md-5">
@@ -33,7 +34,7 @@
     <div id="detail-Location" class="content" style="text-align:center">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58759.16906197546!2d120.28783349999999!3d23.007315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1490376535555" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
     </div>
-    <div id="detail-Reviews" class="content">
+    <div id="detail-Reviews" class="content" style="text-align:center;">
       <div class="fb-comments" data-href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" data-width="1000" data-numposts="3"></div>
     </div>
         <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>  
