@@ -13,11 +13,16 @@ if($_SERVER[REQUEST_METHOD]==POST){
   echo '<script>alert("Please fill in the information");</script>';
   }
   else {
-      $sql="SELECT * FROM users WHERE $email='email'";
+      $sql="SELECT * FROM users WHERE email='$email'";
       $result= $conn->query($sql);
       if($result->num_rows>0){
         $row = $result->fetch_assoc();
-        echo $row[email];
+        if($row[password]==$password){
+          // TODO: login success
+        }
+        else{
+          echo '<script>alert("Your password is incorrect!Try Again")</script>';
+        }
       }
       else{
       echo '<script>alert("your password or email is incorrect")</script>';
