@@ -1,4 +1,5 @@
 <?php
+include "db.php";
 function handlename($data){
   $data= trim($data);
   $data= htmlspecialchars($data);
@@ -12,8 +13,12 @@ function handlename($data){
     $password= handlename($_POST[password]);
     $phonenumber= handlename($_POST[phonenumber]);
     $birthday= handlename($_POST[birthday]);
-    if(empty($firstname) || empty($lastname) || empty($email) ||empty($password) ||empty($phonenumber) ||empty($birthday)){
+    if(empty($firstname) || empty($lastname) || empty($email) ||empty($password) ||empty($birthday)){
       echo '<script>alert("please fill in the information");</script>';
+    } else {
+      $sql="INSERT INTO users (first_name,last_name,email,password,phone_number,birthday) VALUES('$firstname','$lastname','$email','$password','$phonenumber','$birthday');";
+      $conn->query($sql);
     }
   }
+
 ?>
