@@ -7,28 +7,29 @@
 </head>
 <body>
   {{> header}}
+  <?php @include "php/profile.php"; ?>
   <div class="row">
-    <h3>May Chen</h3>
+    <h3><?php echo $row["first_name"]." ".$row["last_name"]; ?></h3>
     <div class="col-md-11">
       <img src="./images/profile.svg" height="100px" width="100px">
     </div>
     <div class="col-md-12">
-      <p>Job: student</p>
+      <p>Job: <?php echo $row["job"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Email: a;sldkfjfji@gmail.com</p>
+      <p>Email: <?php echo $row["email"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Age: 15</p>
+      <p>Age: <?php echo $row["age"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Gender: Femail</p>
+      <p>Gender: <?php echo $row["gender"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Phone Number: 0900000000</p>
+      <p>Phone Number: <?php echo $row["phone_number"]; ?></p>
     </div>
     <div class="col-md-12">
-          <p>Birthday: 00/00/00</p>
+          <p>Birthday: <?php echo $row["birthday"]; ?></p>
     </div>
   </div>
     {{> footer }}

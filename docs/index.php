@@ -11,8 +11,14 @@
         <option value="Organization">Organization</option>
         <option value="People">People</option>
         <option value="Events">Events</option>
-        </select><input type="text" class="form-control" placeholder="Keywords">
-        <input type="text" class="form-control" placeholder="Where">
+        </select><input type="text" class="form-control searchbox" placeholder="Keywords">
+        <input type="text" class="form-control searchbox" placeholder="Where">
+        <style>
+        .searchbox{
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        </style>
         <button type="submit" class="btn btn-default">Search</button>
      </div>
    </div>

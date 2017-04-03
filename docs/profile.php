@@ -3,28 +3,29 @@
   <link rel="stylesheet" href="css/Profile.css">
 </head>
 <body>
-  <nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>  <div class="row">
-    <h3>May Chen</h3>
+  <nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>  <?php @include "php/profile.php"; ?>
+  <div class="row">
+    <h3><?php echo $row["first_name"]." ".$row["last_name"]; ?></h3>
     <div class="col-md-11">
       <img src="./images/profile.svg" height="100px" width="100px">
     </div>
     <div class="col-md-12">
-      <p>Job: student</p>
+      <p>Job: <?php echo $row["job"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Email: a;sldkfjfji@gmail.com</p>
+      <p>Email: <?php echo $row["email"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Age: 15</p>
+      <p>Age: <?php echo $row["age"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Gender: Femail</p>
+      <p>Gender: <?php echo $row["gender"]; ?></p>
     </div>
     <div class="col-md-12">
-      <p>Phone Number: 0900000000</p>
+      <p>Phone Number: <?php echo $row["phone_number"]; ?></p>
     </div>
     <div class="col-md-12">
-          <p>Birthday: 00/00/00</p>
+          <p>Birthday: <?php echo $row["birthday"]; ?></p>
     </div>
   </div>
           <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>

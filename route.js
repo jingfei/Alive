@@ -65,6 +65,14 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/profile.hbs",
     "filename": "./docs/profile.php"
+  },
+  {
+    data: {
+      "title": "Alive - post job form"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/PostJobForm.hbs",
+    "filename": "./docs/postjobform.php"
   }
 ];
 
