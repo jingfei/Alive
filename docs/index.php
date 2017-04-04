@@ -3,26 +3,13 @@
 	</head>
 	<body>
     <nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>    <div class="jumbotron">
-      <h3>What are you looking for?</h3>
-<div class="style-select" tabindex="2">
-    <div class="col-md-4">
-      <select name="search_type">
-        <option value="Volunteer Opportunities">Volunteer Opportunities</option>
-        <option value="Organization">Organization</option>
-        <option value="People">People</option>
-        <option value="Events">Events</option>
-        </select><input type="text" class="form-control searchbox" placeholder="Keywords">
-        <input type="text" class="form-control searchbox" placeholder="Where">
-        <style>
-        .searchbox{
-          margin-top: 30px;
-          margin-bottom: 30px;
-        }
-        </style>
-        <button type="submit" class="btn btn-default">Search</button>
-     </div>
-   </div>
-   </div>
+  <h1>Hello, world</h1>
+    <input type="text" class="form-control" placeholder="Keywords">
+    <input type="text" class="form-control" placeholder="Location">
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+<div class="jumbotron">
+</div>
 <div class="jumbotron">
   <div class="container">
   </div>

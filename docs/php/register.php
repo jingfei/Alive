@@ -10,9 +10,9 @@ function handlename($data){
     $firstname = handlename($_POST["firstname"]);
     $lastname = handlename($_POST["lastname"]);
     $email= handlename($_POST["email"]);
-    $password= handlename($_POST[password]);
-    $phonenumber= handlename($_POST[phonenumber]);
-    $birthday= handlename($_POST[birthday]);
+    $password= handlename($_POST["password"]);
+    $phonenumber= handlename($_POST["phonenumber"]);
+    $birthday= handlename($_POST["birthday"]);
     if(empty($firstname) || empty($lastname) || empty($email) ||empty($password) ||empty($birthday)){
       echo '<script>alert("please fill in the information");</script>';
     } else {

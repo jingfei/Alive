@@ -7,6 +7,7 @@
   </head>
 	<body>
 	{{> header}}
+  <?php @include "php/detail.php"; ?>
   <div id="fb-root"></div>
     <div>
       <ul class="nav nav-tabs nav-justified">
@@ -17,14 +18,14 @@
     </div>
     <div class="row content active" id="detail-Home">
       <div class="col-md-7">
-        <h2>"insert job name"</h2>
-        <div id="detail-phonenumber">Phone Number:</div><div>00-000-000</div><br/>
-        <div id="detail-agerequirement">Age Requirement:</div><div>15years old - 19 years old</div><br/>
-        <div id="detail-organizationname">Organization Name:</div><div>blah hostipal</div><br/>
-        <div id="detail-address">Address:</div> <div>2847 University Street,Seattle, WA </div><br/>
-        <div id="detail-worktime">When:</div> <div>Monday-Friday 2:00pm-3:30pm</div><br/>
-        <div id="detail-website">Website:</div><div><a href="https://www.facebook.com/profile.php?id=713232701" target="_blank">https://www.facebook.com/profile.php?id=713232701</a></div><br/>
-        <div id="detail-jobdescription">Job Description:</div><div>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</div>
+        <h2><?php echo $row["job_name"]; ?></h2>
+        <div id="detail-phonenumber">Phone Number:</div><div><?php echo $row["phone_number"]; ?></div><br/>
+        <div id="detail-agerequirement">Age Requirement:</div><div><?php echo $row["age_requirement"]; ?></div><br/>
+        <div id="detail-organizationname">Organization Name:</div><div><?php echo $row["org_name"]; ?></div><br/>
+        <div id="detail-address">Address:</div> <div><?php echo $row["address"]; ?></div><br/>
+        <div id="detail-worktime">When:</div> <div><?php echo $row["time"]; ?></div><br/>
+        <div id="detail-website">Website:</div><div><?php echo $row["website"]; ?></div><br/>
+        <div id="detail-jobdescription">Job Description:</div><div><?php echo $row["job_description"]; ?></div>
       </div>
       <div class="col-md-5">
         <img src="..." style="width:100%;height:50%">

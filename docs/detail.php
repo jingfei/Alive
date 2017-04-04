@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="./css/detail.css">
   </head>
 	<body>
-	<nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>  <div id="fb-root"></div>
+	<nav class="navbar navbar-default">  <div class="container-fluid">    <!-- Brand and toggle get grouped for better mobile display -->    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <!-- Collect the nav links, forms, and other content for toggling -->    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li><a href="#">Search Organization</a></li>        <li><a href="#">Post a job</a></li>        <li><a href="#">Find a job</a></li>      </ul>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">Login</a></li>          <li><a href="#">Register</a></li>      </ul>    </div><!-- /.navbar-collapse -->  </div><!-- /.container-fluid --></nav>  <?php @include "php/detail.php"; ?-->
+  <div id="fb-root"></div>
     <div>
       <ul class="nav nav-tabs nav-justified">
         <li role="presentation" class="active"><a href="#">Home</a></li>
@@ -14,14 +15,14 @@
     </div>
     <div class="row content active" id="detail-Home">
       <div class="col-md-7">
-        <h2>"insert job name"</h2>
-        <div id="detail-phonenumber">Phone Number:</div><div>00-000-000</div><br>
-        <div id="detail-agerequirement">Age Requirement:</div><div>15years old - 19 years old</div><br>
-        <div id="detail-organizationname">Organization Name:</div><div>blah hostipal</div><br>
-        <div id="detail-address">Address:</div> <div>2847 University Street,Seattle, WA </div><br>
-        <div id="detail-worktime">When:</div> <div>Monday-Friday 2:00pm-3:30pm</div><br>
-        <div id="detail-website">Website:</div><div><a href="https://www.facebook.com/profile.php?id=713232701" target="_blank">https://www.facebook.com/profile.php?id=713232701</a></div><br>
-        <div id="detail-jobdescription">Job Description:</div><div>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</div>
+        <h2><?php echo $row["job_name"]; ?--></h2>
+        <div id="detail-phonenumber">Phone Number:</div><div><?php echo $row["phone_number"]; ?--></div><br>
+        <div id="detail-agerequirement">Age Requirement:</div><div><?php echo $row["age_requirement"]; ?--></div><br>
+        <div id="detail-organizationname">Organization Name:</div><div><?php echo $row["org_name"]; ?--></div><br>
+        <div id="detail-address">Address:</div> <div><?php echo $row["address"]; ?--></div><br>
+        <div id="detail-worktime">When:</div> <div><?php echo $row["time"]; ?--></div><br>
+        <div id="detail-website">Website:</div><div><?php echo $row["website"]; ?--></div><br>
+        <div id="detail-jobdescription">Job Description:</div><div><?php echo $row["job_description"]; ?--></div>
       </div>
       <div class="col-md-5">
         <img src="..." style="width:100%;height:50%">
