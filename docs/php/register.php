@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+@include "db.php";
 function handlename($data){
   $data= trim($data);
   $data= htmlspecialchars($data);
