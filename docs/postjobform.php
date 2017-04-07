@@ -29,55 +29,6 @@
       <div>
       <input type="text" id="orgname" name="org_name" placeholder="" class="input-xlarge">
       </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <label class="control-label">Address</label>
-      <div>
-        <input type="text" id="address" name="address" placeholder="" class="input-xlarge">
-      </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <!-- When -->
-      <label class="control-label">When</label>
-      <div>
-        <input type="text" id="when" name="time" placeholder="" class="input-xlarge">
-      </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <!-- Phone Number -->
-      <label class="control-label">Phone Number</label>
-      <div>
-        <input type="text" id="phonenumber" name="phonenumber" placeholder="" class="input-xlarge">
-      </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <!-- Website -->
-      <label class="control-label">Website</label>
-      <div>
-        <input type="text" id="website" name="website" placeholder="" class="input-xlarge">
-      </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <!-- Job Description -->
-      <label class="control-label">Job Description</label>
-      <div class="controls">
-        <input type="text" id="jobdescription" name="job_description" placeholder="" class="input-xlarge">
-      </div>
-    </div>
-
-    <div class="control-group" style="text-align: center">
-      <!-- Post Button -->
-      <div class="controls">
-        <button class="btn btn-success" type="submit">Post</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
-      <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>
+      <input type="text" placeholder="" <="" div="">
 
 </body></html>
