@@ -5,12 +5,13 @@
   </head>
   <body>
     {{> header}}
-<?php @include "php/postjobform.php"; ?>
+    <?php @include "php/postjobform.php"; ?>
 <form class="form-horizontal" action='' method="POST">
   <fieldset>
     <div id="legend" style="text-align: center">
       <h3>Post Job</h3>
     </div>
+
     <div class="control-group" style="text-align: center">
       <!-- Job Name -->
       <label class="control-label" name="job_name">Job Name</label>
@@ -46,7 +47,7 @@
       <!-- When -->
       <label class="control-label">When</label>
       <div>
-        <input type="text" id="when" name="time" placeholder="" class="input-xlarge">
+        <input type="text" id="when" name="thetime" placeholder="" class="input-xlarge">
       </div>
     </div>
 
@@ -54,7 +55,7 @@
       <!-- Phone Number -->
       <label class="control-label">Phone Number</label>
       <div>
-        <input type="text" id="phonenumber" name="phonenumber" placeholder="" class="input-xlarge">
+        <input type="text" id="phonenumber" name="phone_number" placeholder="" class="input-xlarge">
       </div>
     </div>
 
@@ -65,7 +66,6 @@
         <input type="text" id="website" name="website" placeholder="" class="input-xlarge">
       </div>
     </div>
-
     <div class="control-group" style="text-align: center">
       <!-- Job Description -->
       <label class="control-label">Job Description</label>
