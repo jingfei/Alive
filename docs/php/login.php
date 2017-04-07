@@ -17,8 +17,11 @@ if($_SERVER[REQUEST_METHOD]==POST){
       $result= $conn->query($sql);
       if($result->num_rows>0){
         $row = $result->fetch_assoc();
-        if($row[password]==$password){
+        if($row["password"]==$password){
           // TODO: login success
+          session_start();
+          $_SESSION["id"]=$row["id"];
+          echo '<script>location.href="../Alive/"</script>';
         }
         else{
           echo '<script>alert("Your password is incorrect!Try Again")</script>';
