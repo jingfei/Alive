@@ -29,9 +29,12 @@ function build(load, w) {
             minify: minify
           })
           .then(function(){
-            exec("sed -i '' -- 's/<\!--\?[pP][hH][pP]/<?php/g' docs/*.php")
-            .then(function() {
-              exec("sed -i '' -- 's/\?-->/?>/g' docs/*.php");
+            exec("sed -i '' -- 's/<html>/<?php session_start(); ?><!DOCTYPE html><html>/' docs/*.php")
+            .then(function() { 
+              exec("sed -i '' -- 's/<\!--\?[pP][hH][pP]/<?php/g' docs/*.php")
+              .then(function() {
+                exec("sed -i '' -- 's/\?-->/?>/g' docs/*.php");
+              });
             });
           });
 
