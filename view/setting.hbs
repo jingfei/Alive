@@ -1,0 +1,51 @@
+<html>
+  <head>
+    {{> head}}
+    <link rel="stylesheet" href="css/register.scss">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+	{{> header}}
+    <?php
+    include "./php/register.php"
+    ?>
+    <div id="Registration" style="text-align:center">
+      <h1>Profile Setting</h1>
+      <div id="Registration-forms">
+      <form class="form-inline" id="name" method="post">
+        <div class="form-group">
+          <p>First Name</p>
+          <input type="text" class="form-control" value="<?php echo $row['firstname']; ?>" id="exampleInputName2" placeholder="First Name" name="firstname">
+        </div><br/>
+        <div class="form-group">
+          <p>Last Name</p>
+          <input type="text" value="<?php echo $row['lastname'];?>"class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
+        </div><br/>
+      <div class="form-group row">
+        <p>Email</p><p><?php echo $row["email"];?></p>
+        <div class="col-xs-10">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <p>New Password</p>
+        <div class="col-xs-10">
+          <input class="form-control" type="password" value="hunter2" id="example-password-input" name="password">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <p>Phone number</p>
+        <div class="col-xs-10">
+          <input class="form-control" value="<?php echo $row["phonenumber"]; ?>"type="tel" placeholder="1-(555)-555-5555" id="example-tel-input" name="phonenumber">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <p>Birthday</p> <p><?php echo $row["birthday"]; ?></p>
+      </div><br/>
+      <input type="submit" />
+    </form>
+  </div>
+    </div>
+
+  {{> footer }}
+  </body>
+</html>
