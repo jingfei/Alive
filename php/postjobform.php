@@ -7,11 +7,12 @@ function handlename($data){
 }
 
   if($_SERVER[REQUEST_METHOD]== POST){
+    $sess = $_SESSION['id'];
     $job_name = handlename($_POST["job_name"]);
     $age_requirement = handlename($_POST["age_requirement"]);
     $org_name= handlename($_POST["org_name"]);
     $address= handlename($_POST["address"]);
-    $time= handlename($_POST["thetime"]);
+    $time= handlename($_POST["time"]);
     $phone_number= handlename($_POST["phone_number"]);
     $website= handlename($_POST["website"]);
     $job_description= handlename($_POST["job_description"]);
@@ -20,7 +21,7 @@ function handlename($data){
       echo '<script>alert("please fill in the information");</script>';
     }
     else {
-      $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,thetime,address,phone_number,website,job_description) VALUES(1,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description');";
+      $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description');";
       $conn->query($sql);
   }
 

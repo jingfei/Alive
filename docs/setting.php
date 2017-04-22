@@ -3,8 +3,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
+<<<<<<< HEAD
 	<nav class="navbar navbar-default">  <div class="container-fluid">    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>      </button>      <a class="navbar-brand" href="#">Alive</a>    </div>    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li> <a href="#">Search Organization</a></li>        <li> <a href="#">Post a job</a></li>        <li> <a href="#">Find a job</a></li>      </ul>      <?php        if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="#">My Profile</a></li>        <li><a href="./php/logout.php">Logout</a></li>      </ul>      <?php    } else {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="./login.php">Login</a></li>          <li><a href="#">Register</a></li>      </ul>      <?php } ?>    </div>  </div></nav>    <?php
     @include "./php/setting.php";
+=======
+	<nav class="navbar navbar-default">  <div class="container-fluid">    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>      </button>      <a class="navbar-brand" href="./index.hbs">Alive</a>    </div>    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li> <a href="">Find Organization</a></li>        <li> <a href="./searchpage.php">Find Opportunities</a></li>        <li> <a href="./postjobform.php">Post a Job</a></li>      </ul>      <?php        if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="./profile.php">My Profile</a></li>        <li><a href="./php/logout.php">Logout</a></li>      </ul>      <?php        }        else {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="./login.php">Login</a></li>          <li><a href="./register.php">Register</a></li>      </ul>      <?php } ?>    </div>  </div></nav>    <?php
+    include "./php/register.php"
+>>>>>>> origin/master
     ?>
     <div id="Registration" style="text-align:center">
       <h1>Profile Setting</h1>
@@ -12,11 +17,19 @@
       <form class="form-inline" id="name" method="post">
         <div class="form-group">
           <p>First Name</p>
+<<<<<<< HEAD
           <input type="text" class="form-control" value="<?php echo $row['first_name']; ?>" id="exampleInputName2" placeholder="First Name" name="firstname">
         </div><br>
         <div class="form-group">
           <p>Last Name</p>
           <input type="text" value="<?php echo $row['last_name'];?>" class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
+=======
+          <input type="text" class="form-control" value="<?php echo $row['firstname']; ?>" id="exampleInputName2" placeholder="First Name" name="firstname">
+        </div><br>
+        <div class="form-group">
+          <p>Last Name</p>
+          <input type="text" value="<?php echo $row['lastname'];?>" class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
+>>>>>>> origin/master
         </div><br>
       <div class="form-group row">
         <p>Email</p><p><?php echo $row["email"];?></p>
@@ -24,17 +37,27 @@
         </div>
       </div><br>
       <div class="form-group row">
+<<<<<<< HEAD
         <div class="col-xs-10">
           <p>New password:</p>
           <input class="form-control" type="password" id="example-password-input" name="password">
           <p>Confirm password:</p>
           <input class="form-control" type="password" id="example-password-input" name="confirmpassword">
+=======
+        <p>New Password</p>
+        <div class="col-xs-10">
+          <input class="form-control" type="password" value="hunter2" id="example-password-input" name="password">
+>>>>>>> origin/master
         </div>
       </div><br>
       <div class="form-group row">
         <p>Phone number</p>
         <div class="col-xs-10">
+<<<<<<< HEAD
           <input class="form-control" value="<?php echo $row['phone_number']; ?>" type="tel" id="example-tel-input" name="phonenumber">
+=======
+          <input class="form-control" value="<?php echo $row[" phonenumber"];="" ?="">"type="tel" placeholder="1-(555)-555-5555" id="example-tel-input" name="phonenumber"&gt;
+>>>>>>> origin/master
         </div>
       </div><br>
       <div class="form-group row">

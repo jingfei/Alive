@@ -81,6 +81,14 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/searchbar.hbs",
     "filename": "./docs/searchbar.php"
+  },
+  {
+    data: {
+      "title": "Alive - modify job"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/updatejob.hbs",
+    "filename": "./docs/updatejob.php"
   }
 ];
 
