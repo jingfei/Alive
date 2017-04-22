@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head}}
+  </head>
+  <body>
+    {{> header}}
+    <?php @include "php/updatejob.php"; ?>
+<form class="form-horizontal" action='./updatejob.php' method="POST">
+  <fieldset>
+    <div id="legend" style="text-align: center">
+      <h3>Modify Your Job</h3>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!-- Job Name -->
+      <label class="control-label" name="job_name">Job Name</label>
+      <div>
+        <input type="text" id="jobname" name="job_name" placeholder="" class="input-xlarge" value="<?php echo $row['job_name']; ?> "/>
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!--Age Requirement -->
+      <label class="control-label">Age Requirement</label>
+      <div>
+        <input type="text" id="agerequiremnt" name="age_requirement" placeholder="" class="input-xlarge" value="<?php echo $row['age_requirement']; ?>"/>
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center" >
+      <!-- Org. Name-->
+      <label class="control-label">Organization name</label>
+      <div>
+        <input type="text" style="border:none" id="org_name" name="org_name" placeholder="" class="input-xlarge" value="<?php echo $row['org_name']; ?>" readonly/>
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <label class="control-label" >Address</label>
+      <div>
+        <input type="text" id="address" name="address" placeholder="" class="input-xlarge" value="<?php echo $row['address']; ?>">
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!-- When -->
+      <label class="control-label">Time</label>
+      <div>
+        <input type="text" id="Time" name="time" placeholder="" class="input-xlarge" value="<?php echo $row['time']; ?>">
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!-- Phone Number -->
+      <label class="control-label">Phone Number</label>
+      <div>
+        <input type="text" id="phonenumber" name="phone_number" placeholder="" class="input-xlarge" value="<?php echo $row['phone_number']; ?>">
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!-- Website -->
+      <label class="control-label">Website</label>
+      <div>
+        <input type="text" id="website" name="website" placeholder="" class="input-xlarge" value="<?php echo $row['website']; ?>">
+      </div>
+    </div>
+    <div class="control-group" style="text-align: center">
+      <!-- Job Description -->
+      <label class="control-label">Job Description</label>
+      <div class="controls">
+        <input type="text" id="jobdescription" name="job_description" placeholder="" class="input-xlarge" value="<?php echo $row['job_description']; ?>">
+      </div>
+    </div>
+
+    <div class="control-group" style="text-align: center">
+      <!-- Post Button -->
+      <div class="controls">
+        <button class="btn btn-success" type="submit">Update</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+{{> footer }}
+</body>
+</html>
