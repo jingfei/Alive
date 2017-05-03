@@ -1,1 +1,28 @@
 @import "./_layout";
+
+#big-background {
+  height: 80%;
+  min-height: 550px;
+  background-image: url("../images/Volunteer_Hands.png");
+  background-size: cover;
+  background-position: top;
+
+  #search-bar {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+    input { 
+      background: rgba(255,255,255,.7);
+      height: 50px;
+      font-size: 20px;
+    }
+    .input-group-btn > button {
+      height: 50px;
+      font-size: 20px;
+    }
+
+    h1 { font-size: 70px; }
+    p { font-size: 20px; }
+  }
+}
+
