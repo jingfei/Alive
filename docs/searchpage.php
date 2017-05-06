@@ -4,14 +4,16 @@
 	<body>
     <nav class="navbar navbar-default">  <div class="container-fluid">    <div class="navbar-header">      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        <span class="sr-only">Toggle navigation</span>      </button>      <a class="navbar-brand" href="./index.hbs">Alive</a>    </div>    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      <ul class="nav navbar-nav">        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>        <li> <a href="">Find Organization</a></li>        <li> <a href="./searchpage.php">Find Opportunities</a></li>        <li> <a href="./postjobform.php">Post a Job</a></li>      </ul>      <?php        if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="./profile.php">My Profile</a></li>        <li><a href="./php/logout.php">Logout</a></li>      </ul>      <?php        }        else {      ?>      <ul class="nav navbar-nav navbar-right">        <li><a href="./login.php">Login</a></li>          <li><a href="./register.php">Register</a></li>      </ul>      <?php } ?>    </div>  </div></nav>    <?php @include "php/searchpage.php"; ?>
     <div class="jumbotron" style="padding:10px">
-      <h2>Search Result of ()!</h2>
+      <h2>Search Result of <?php echo $search_result; ?>!</h2>
       </div>
+  <!--
     <div class="sort-by">
       <h4>Sort By</h4>
       <button type="button" class="btn btn-secondary btn-lg">Most Popular</button>
       <button type="button" class="btn btn-secondary btn-lg">Most Recent</button>
       <button type="button" class="btn btn-secondary btn-lg">Most Views</button>
     </div>
+  -->
     <div class="col-lg-12">
      <div class="input-group input-group-lg" style="margin:10px;">
        <form action="./searchpage.php" method="get">
@@ -23,10 +25,11 @@
      </div><!-- /input-group -->
    </div><!-- /.col-lg-6 -->
     <div class="row">
+    <!--
       <div class="col-md-3 filter">
         <h2>Filter results</h2>
         <p>
-        </p><div class="btn-group">
+        <div class="btn-group">
           <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Location (City) <span class="caret"></span>
           </button>
@@ -55,7 +58,7 @@
             <li><a href="#">Yuanlin</a></li>
             <li><a href="#">Zhubei</a></li>
           </ul>
-        </div><br>
+        </div></br>
         <div class="btn-group">
           <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Weekday <span class="caret"></span>
@@ -69,7 +72,7 @@
             <li><a href="#">Saturday</a></li>
             <li><a href="#">Sunday</a></li>
           </ul>
-        </div><br>
+        </div><br/>
         <div class="btn-group">
           <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Time <span class="caret"></span>
@@ -106,7 +109,8 @@
           </ul>
       </div>
       </div>
-      <div class="row col-md-9">
+    -->
+    <div class="row col-md-9">
 <?php
 while($row=$result->fetch_assoc()){
 ?>

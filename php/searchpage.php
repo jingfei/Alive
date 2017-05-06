@@ -6,7 +6,8 @@ function handlename($data){
   return $data;
 }
 $search_result= handlename($_GET["searchvalue"]);
-if($_SERVER[REQUEST_METHOD]=="GET" && $search_result.length>0){
+
+if($_SERVER[REQUEST_METHOD]=="GET" && strlen($search_result)>0){
   $sql="SELECT * from jobs WHERE job_name LIKE '%$search_result%' or job_description LIKE '%$search_result%'";
 }
 else {
