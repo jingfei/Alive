@@ -9,6 +9,5 @@ if($result->num_rows>0){
 
 $sql2="SELECT * FROM jobs WHERE userid=$sess";
 $result2=$conn->query($sql2);
-echo $result2->num_rows;
 
 ?>

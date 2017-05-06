@@ -32,22 +32,25 @@
 
     <div class="row col-md-6">
       <div class="col-md-12">
-
-          <table class="table table-striped">
-          <tbody><tr>
-            <th>Jobname</th>
-            <th>detail</th>
-            <th>Organization</th>
-            <th>Time</th>
-          </tr>
-          <?php while($row=$result2->fetch_assoc()) { ?><tr>
-            <td><?php echo $row["job_name"]; ?></td>
+            <table class="table table-striped">
+           <thead>
+              <tr>
+                <th>Jobname</th>
+                <th>detail</th>
+                <th>Organization</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+          <?php while($row=$result2-> fetch_assoc()) { ?>
+            <tr onclick="location.href='detail?jobid=<?php echo $row["id"]; ?>';"><td><?php echo $row["job_name"]; ?></td>
             <td><?php echo $row["job_description"]; ?></td>
             <td><?php echo $row["org_name"]; ?></td>
             <td><?php echo $row["time"]; ?></td>
           </tr>
           <?php } ?>
-         </tbody></table>
+        </tbody>
+         </table>
 
       </div>
     </div>

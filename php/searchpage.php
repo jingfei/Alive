@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 include "db.php";
 if($_SERVER[REQUEST_METHOD]==GET){
 
@@ -9,6 +10,8 @@ echo '<script>alert("go away dont do this")</script>'
 }
 
 
+=======
+>>>>>>> origin/master
 @include "db.php";
 function handlename($data){
   $data= trim($data);
@@ -23,5 +26,8 @@ else {
 $sql="SELECT * from jobs";
 }
 $result= $conn->query($sql);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 ?>

@@ -17,19 +17,11 @@
 .dropdown-user:hover {
     cursor: pointer;
 }
-
-.table-user-information > tbody > tr {
-    border-top: 1px solid rgb(221, 221, 221);
+.table-striped > tbody > tr:hover {
+  background: gray;
+  cursor: pointer;
 }
 
-.table-user-information > tbody > tr:first-child {
-    border-top: 0;
-}
-
-
-.table-user-information > tbody > tr > td {
-    border-top: 0;
-}
 .toppad
 {margin-top:20px;
 }
@@ -39,5 +31,5 @@
 }
 
 .title{
-  
+
 }

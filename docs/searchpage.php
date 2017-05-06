@@ -14,19 +14,25 @@
     </div>
     <div class="col-lg-12">
      <div class="input-group input-group-lg" style="margin:10px;">
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 
        <input type="text" class="form-control" name="searchvalue" method="get" placeholder="Search for...">
        <span class="input-group-btn">
          <button class="btn btn-default" type="button">Go!</button>
        </span>
 
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master
        <form action="./searchpage.php" method="get">
        <input type="text" class="form-control" name="searchvalue" method="get" placeholder="Search for...">
        <span class="input-group-btn">
            <button class="btn btn-default" type="submit">Go!</button>
        </span>
      </form>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master
      </div><!-- /input-group -->
    </div><!-- /.col-lg-6 -->
     <div class="row">
@@ -115,8 +121,8 @@
       </div>
       <div class="row col-md-9">
 <?php
-while($row=$result->fetch_assoc()){
-?>
+while($row=$result--->fetch_assoc()){
+?&gt;
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="..." alt="...">
@@ -138,6 +144,6 @@ while($row=$result->fetch_assoc()){
   </ul>
   </div>
   </div>
-          <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>
+          <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>  
 
 </body></html>
