@@ -10,14 +10,14 @@ route = [
     "layout":  "./view/index.hbs",
     "filename": "./docs/index.php"
   },
-  {
-    data: {
-      "title": "Alive - search page"
-    },
-    "partials": './partials.js',
-    "layout":  "./view/searchpage.hbs",
-    "filename": "./docs/searchpage.php"
-  },
+  // {
+  //   data: {
+  //     "title": "Alive - search page"
+  //   },
+  //   "partials": './partials.js',
+  //   "layout":  "./view/searchpage.hbs",
+  //   "filename": "./docs/searchpage.php"
+  // },
   {
     data: {
       "title": "Alive - detail page"
@@ -58,14 +58,14 @@ route = [
     "layout":  "./view/postjob.hbs",
     "filename": "./docs/postjob.php"
   },
-  {
-    data: {
-      "title": "Alive - profile page"
-    },
-    "partials": './partials.js',
-    "layout":  "./view/profile.hbs",
-    "filename": "./docs/profile.php"
-  },
+  // {
+  //   data: {
+  //     "title": "Alive - profile page"
+  //   },
+  //   "partials": './partials.js',
+  //   "layout":  "./view/profile.hbs",
+  //   "filename": "./docs/profile.php"
+  // },
   {
     data: {
       "title": "Alive - post job form"
