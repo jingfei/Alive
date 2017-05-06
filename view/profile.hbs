@@ -9,27 +9,55 @@
   {{> header}}
   <?php @include "php/profile.php"; ?>
   <div class="row">
-    <h3><?php echo $row["first_name"]." ".$row["last_name"]; ?></h3>
-    <div class="col-md-11">
-      <img src="./images/profile.svg" height="100px" width="100px">
-    </div>
-    <div class="col-md-12">
-      <p>Job: <?php echo $row["job"]; ?></p>
-    </div>
-    <div class="col-md-12">
-      <p>Email: <?php echo $row["email"]; ?></p>
-    </div>
-    <div class="col-md-12">
-      <p>Age: <?php echo $row["age"]; ?></p>
-    </div>
-    <div class="col-md-12">
-      <p>Gender: <?php echo $row["gender"]; ?></p>
-    </div>
-    <div class="col-md-12">
-      <p>Phone Number: <?php echo $row["phone_number"]; ?></p>
-    </div>
-    <div class="col-md-12">
-          <p>Birthday: <?php echo $row["birthday"]; ?></p>
+      <div class="row col-md-6">
+        <h3><?php echo $row["first_name"]." ".$row["last_name"]; ?></h3>
+        <div class="col-md-12">
+          <img src="./images/profile.svg" height="100px" width="100px">
+        </div>
+        <div class="col-md-12">
+          <p>Job: <?php echo $row["job"]; ?></p>
+        </div>
+        <div class="col-md-12">
+          <p>Email: <?php echo $row["email"]; ?></p>
+        </div>
+        <div class="col-md-12">
+          <p>Age: <?php echo $row["age"]; ?></p>
+        </div>
+        <div class="col-md-12">
+          <p>Gender: <?php echo $row["gender"]; ?></p>
+        </div>
+        <div class="col-md-12"> 
+          <p>Phone Number: <?php echo $row["phone_number"]; ?></p>
+        </div>
+        <div class="col-md-12">
+              <p>Birthday: <?php echo  $row["birthday"]; ?></p>
+        </div>
+      </div>
+
+    <div class="row col-md-6">
+      <div class="col-md-12">
+         <table class="table table-striped">
+           <thead>
+              <tr>
+                <th>Jobname</th>
+                <th>detail</th>
+                <th>Organization</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+          <?php while($row=$result2->fetch_assoc()) { ?>
+          <tr onClick="location.href='detail?jobid=<?php echo $row["id"]; ?>';">
+            <td><?php echo $row["job_name"]; ?></td>
+            <td><?php echo $row["job_description"]; ?></td>
+            <td><?php echo $row["org_name"]; ?></td>
+            <td><?php echo $row["time"]; ?></td>
+          </tr>
+          <?php } ?>
+        </tbody>
+         </table>
+
+      </div>
     </div>
   </div>
     {{> footer }}
