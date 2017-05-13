@@ -123,7 +123,7 @@ while($row=$result->fetch_assoc()){
             <div class="caption">
               <h3>Search Result 1: <?php echo $row["job_name"];?></h3>
               <p>Job title: <?php echo $row["job_name"];?> </br> Age:<?php echo $row["age_requirement"];?> </br> Location: <?php echo $row["address"];?></br></p>
-              <p><a href="#" class="btn btn-primary" role="button">Click For More Info</a> <a href="#" class="btn btn-default" role="button">Save to Bookmarks</a></p>
+              <p><a href="./detail.php?jobid=<?php echo $row["id"];?>" class="btn btn-primary" role="button">Click For More Info</a> </p>
             </div>
           </div>
         </div>
