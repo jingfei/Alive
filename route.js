@@ -17,7 +17,7 @@ route = [
   //   "partials": './partials.js',
   //   "layout":  "./view/searchpage.hbs",
   //   "filename": "./docs/searchpage.php"
-  // },
+  //},
   {
     data: {
       "title": "Alive - detail page"
