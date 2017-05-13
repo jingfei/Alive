@@ -10,12 +10,12 @@
       <div id="search-bar">
         <h1>Alive</h1>
         <p>appreciate love in volunteering everyday</p>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for volunteer jobs">
+        <form class="input-group" action="./searchpage.php">
+          <input type="text" class="form-control" name="searchvalue" method="get" placeholder="Search for volunteer jobs">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
+            <button class="btn btn-default" type="submit">Go!</button>
           </span>
-        </div><!-- /input-group -->
+        </form>
       </div>
     </div>
     {{> footer }}

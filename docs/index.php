@@ -6,12 +6,12 @@
       <div id="search-bar">
         <h1>Alive</h1>
         <p>appreciate love in volunteering everyday</p>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for volunteer jobs">
+        <form class="input-group" action="./searchpage.php">
+          <input type="text" class="form-control" name="searchvalue" method="get" placeholder="Search for volunteer jobs">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
+            <button class="btn btn-default" type="submit">Go!</button>
           </span>
-        </div><!-- /input-group -->
+        </form>
       </div>
     </div>
           <div id="footer" class="row">        <div class="About col-md-3">          <h3>About</h3>          <p>About us</p>          <p>Privacy Policy</p>          <p>Customer Service</p>        </div>        <div class="Help col-md-3">          <h3>Help</h3>          <p>Help Center</p>          <p>Get Started</p>          <p>Contact us</p>        </div>        <div class="Visit-us col-md-3">          <h3>Follow Us</h3>            <img src="images/facebookicon.png" height="30px" weight="30px">            <img src="images/twitter-128.png" height="30px" weight="30px">            <img src="images/google-plus-flat.png" height="30px" weight="30px">        </div>        <div class="Contact col-md-3">          <p>Stay Connected</p>          <div class="input-group">              <input type="text" class="form-control" placeholder="Email Address">              <span class="input-group-btn">                <button class="btn btn-default" type="button">Submit</button>              </span>          </div>        </div>      </div>  
