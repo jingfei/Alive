@@ -86,10 +86,10 @@ gulp.task('php', function () {
   .pipe(gulp.dest('./docs/php/'));
 });
 
-gulp.task('font', function () {
-  return gulp.src(['./font/**/*'])
-  .pipe(gulp.dest('./docs/font/'));
+gulp.task('fonts', function () {
+  return gulp.src(['./fonts/**/*'])
+  .pipe(gulp.dest('./docs/fonts/'));
 })
 
 
-gulp.task('default', ['scripts', 'json', 'scss', 'image', 'php', 'font', 'watch']);
+gulp.task('default', ['scripts', 'json', 'scss', 'image', 'php', 'fonts', 'watch']);
