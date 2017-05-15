@@ -17,7 +17,6 @@ function handlename($data){
       echo '<script>alert("please fill in the information");</script>';
     } else {
       $sql="INSERT INTO users (first_name,last_name,email,password,phone_number,birthday) VALUES('$firstname','$lastname','$email','$password','$phonenumber','$birthday');";
-      echo $sql;
       $conn->query($sql);
     }
   }
