@@ -9,16 +9,14 @@ $search_result= handlename($_GET["searchvalue"]);
 
 if($_SERVER[REQUEST_METHOD]=="GET" && strlen($search_result)>0){
   $sql="SELECT * from jobs WHERE job_name LIKE '%$search_result%' or job_description LIKE '%$search_result%'";
+} else {
+  $sql="SELECT * from jobs";
 }
-else {
-$sql="SELECT * from jobs";
-}
-$result= $conn->query($sql);
 
 function getJobs() {
+  $result= $conn->query($sql);
   while($row=$result->fetch_assoc()){
-    echo '
-        <div class="col-sm-6 col-md-4">
+    echo '<div class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="..." alt="...">
             <div class="caption">
