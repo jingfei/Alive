@@ -12,9 +12,9 @@ if($_SERVER[REQUEST_METHOD]=="GET" && strlen($search_result)>0){
 } else {
   $sql="SELECT * from jobs";
 }
+$result= $conn->query($sql);
 
-function getJobs() {
-  $result= $conn->query($sql);
+function getJobs($result) {
   while($row=$result->fetch_assoc()){
     echo '<div class="col-sm-6 col-md-4">
           <div class="thumbnail">

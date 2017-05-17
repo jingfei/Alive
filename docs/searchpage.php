@@ -111,7 +111,7 @@
       </div>
     -->
     <div class="row col-md-9">
-      <?php getJobs(); ?>
+      <?php getJobs($result); ?>
     </div>
 
   <ul class="pagination">
