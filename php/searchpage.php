@@ -14,4 +14,20 @@ else {
 $sql="SELECT * from jobs";
 }
 $result= $conn->query($sql);
+
+function getJobs() {
+  while($row=$result->fetch_assoc()){
+    echo '
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Search Result 1: '.$row["job_name"].'</h3>
+              <p>Job title: '.$row["job_name"].' </br> Age:'.$row["age_requirement"].'</br> Location: '.$row["address"].'</br></p>
+              <p><a href="./detail.php?jobid='.$row["id"].'" class="btn btn-primary" role="button">Click For More Info</a> </p>
+            </div>
+          </div>';
+  }
+}
+
 ?>

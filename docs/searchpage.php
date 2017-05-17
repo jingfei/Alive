@@ -1,4 +1,4 @@
-<?php session_start(); ?><!DOCTYPE html><?php session_start(); ?><!DOCTYPE html><?php session_start(); ?><!DOCTYPE html><html><head>
+<?php session_start(); ?><!DOCTYPE html><html><head>
     <meta charset="utf-8"><title>Alive - Apperciate Love In Volunteering Everyday</title>  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <link rel="stylesheet" href="./css/font-awesome.min.css">  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <script>$('.dropdown-toggle').dropdown()</script>    <link rel="stylesheet" href="css/searchpage.css">
 	</head>
 	<body>
@@ -111,20 +111,8 @@
       </div>
     -->
     <div class="row col-md-9">
-<?php
-while($row=$result->fetch_assoc()){
-?>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-              <h3>Search Result 1: <?php echo $row["job_name"];?></h3>
-              <p>Job title: <?php echo $row["job_name"];?> <br> Age:<?php echo $row["age_requirement"];?> <br> Location: <?php echo $row["address"];?><br></p>
-              <p><a href="./detail.php?jobid=<?php echo $row["x id"];?>" class="btn btn-primary" role="button">Click For More Info</a> </p>
-            </div>
-          </div>
-        </div>
-  <?php } ?>
+      <?php getJobs(); ?>
+    </div>
 
   <ul class="pagination">
   <li><a href="#">1</a></li>
@@ -134,7 +122,7 @@ while($row=$result->fetch_assoc()){
   <li><a href="#">5</a></li>
   </ul>
   </div>
-  </div>
+  
           <div id="footer" class="row">        <div class="col-md-6" style="padding: 10px 40px;">          <p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/"><i class="fa fa-facebook" aria-hidden="true"></i>  &nbsp;Alive- Appreciate Love in Volunteering Everyday</a></p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/">          </a><p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/"></a><a href="https://twitter.com/alive_volunteer"> <i class="fa fa-twitter" aria-hidden="true"></i>  &nbsp;@alive_volunteer</a></p><a href="https://twitter.com/alive_volunteer">          </a><p><a href="https://twitter.com/alive_volunteer"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a><a href="mailto:alive-volunteer@googlegroups.com"> &nbsp;alive-volunteer@googlegroups.com</a></p>        </div>        <div class="col-md-6">          <h3>About this company</h3>        </div>      </div>  
 
 </body></html>

@@ -114,20 +114,8 @@
       </div>
     -->
     <div class="row col-md-9">
-<?php
-while($row=$result->fetch_assoc()){
-?>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-              <h3>Search Result 1: <?php echo $row["job_name"];?></h3>
-              <p>Job title: <?php echo $row["job_name"];?> </br> Age:<?php echo $row["age_requirement"];?> </br> Location: <?php echo $row["address"];?></br></p>
-              <p><a href="./detail.php?jobid=<?php echo $row["id"];?>" class="btn btn-primary" role="button">Click For More Info</a> </p>
-            </div>
-          </div>
-        </div>
-  <?php } ?>
+      <?php getJobs(); ?>
+    </div>
 
   <ul class="pagination">
   <li><a href="#">1</a></li>

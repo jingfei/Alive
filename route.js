@@ -11,15 +11,15 @@ route = [
     "layout":  "./view/index.hbs",
     "filename": "./docs/index.php"
   },
-  // {
-  //    data: {
-  //      "title": "Alive - search page",
-  //      "menu_search": true
-  //    },
-  //    "partials": './partials.js',
-  //    "layout":  "./view/searchpage.hbs",
-  //    "filename": "./docs/searchpage.php"
-  // },
+  {
+     data: {
+       "title": "Alive - search page",
+       "menu_search": true
+     },
+     "partials": './partials.js',
+     "layout":  "./view/searchpage.hbs",
+     "filename": "./docs/searchpage.php"
+  },
   {
     data: {
       "title": "Alive - detail page",
