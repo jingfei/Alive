@@ -50,7 +50,7 @@ route = [
   {
     data: {
       "title": "Alive - login page",
-      "menu_logn": true
+      "menu_login": true
     },
     "partials": './partials.js',
     "layout":  "./view/login.hbs",
