@@ -112,7 +112,6 @@
     -->
     <div class="row col-md-9">
       <?php getJobs($result); ?>
-    </div>
 
   <ul class="pagination">
   <li><a href="#">1</a></li>
@@ -122,7 +121,7 @@
   <li><a href="#">5</a></li>
   </ul>
   </div>
-  
+  </div>
           <div id="footer" class="row">        <div class="col-md-6" style="padding: 10px 40px;">          <p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/"><i class="fa fa-facebook" aria-hidden="true"></i>  &nbsp;Alive- Appreciate Love in Volunteering Everyday</a></p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/">          </a><p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/"></a><a href="https://twitter.com/alive_volunteer"> <i class="fa fa-twitter" aria-hidden="true"></i>  &nbsp;@alive_volunteer</a></p><a href="https://twitter.com/alive_volunteer">          </a><p><a href="https://twitter.com/alive_volunteer"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a><a href="mailto:alive-volunteer@googlegroups.com"> &nbsp;alive-volunteer@googlegroups.com</a></p>        </div>        <div class="col-md-6">          <h3>About this company</h3>        </div>      </div>  
 
 </body></html>

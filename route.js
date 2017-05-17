@@ -56,15 +56,15 @@ route = [
     "layout":  "./view/login.hbs",
     "filename": "./docs/login.php"
   },
-  // {
-  //   data: {
-  //     "title": "Alive - profile page",
-  //     "menu_profile": true
-  //   },
-  //   "partials": './partials.js',
-  //   "layout":  "./view/profile.hbs",
-  //   "filename": "./docs/profile.php"
-  // },
+  {
+    data: {
+      "title": "Alive - profile page",
+      "menu_profile": true
+    },
+    "partials": './partials.js',
+    "layout":  "./view/profile.hbs",
+    "filename": "./docs/profile.php"
+  },
   {
     data: {
       "title": "Alive - post job form",

@@ -24,7 +24,7 @@ function getJobs($result) {
               <p>Job title: '.$row["job_name"].' </br> Age:'.$row["age_requirement"].'</br> Location: '.$row["address"].'</br></p>
               <p><a href="./detail.php?jobid='.$row["id"].'" class="btn btn-primary" role="button">Click For More Info</a> </p>
             </div>
-          </div>';
+          </div></div>';
   }
 }
 
