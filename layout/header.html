@@ -8,19 +8,19 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>
-        <li> <a href="./searchpage.php">Find Opportunities</a></li>
+        <li {{#if menu_home}}class="active"{{/if}}><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>
+        <li {{#if menu_search}}class="active"{{/if}}> <a href="./searchpage.php">Find Opportunities</a></li>
         <?php
           if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {
         ?>
-        <li> <a href="./postjobform.php">Post a Job</a></li>
+        <li {{#if menu_job}}class="active"{{/if}}> <a href="./postjobform.php">Post a Job</a></li>
     <?php } ?>
       </ul>
       <?php
         if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {
       ?>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./profile.php">My Profile</a></li>
+        <li {{#if menu_profile}}class="active"{{/if}}><a href="./profile.php">My Profile</a></li>
         <li><a href="./php/logout.php">Logout</a></li>
       </ul>
       <?php
@@ -28,8 +28,8 @@
         else {
       ?>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./login.php">Login</a></li>
-          <li><a href="./register.php">Register</a></li>
+        <li {{#if menu_login}}class="active"{{/if}}><a href="./login.php">Login</a></li>
+          <li {{#if menu_register}}class="active"{{/if}}><a href="./register.php">Register</a></li>
       </ul>
       <?php } ?>
     </div>

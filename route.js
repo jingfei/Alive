@@ -4,7 +4,8 @@ var url = require('url');
 route = [
   {
     data: {
-      "title": "Alive - home page"
+      "title": "Alive - home page",
+      "menu_start": true
     },
     "partials": './partials.js',
     "layout":  "./view/index.hbs",
@@ -12,7 +13,8 @@ route = [
   },
   // {
   //    data: {
-  //      "title": "Alive - search page"
+  //      "title": "Alive - search page",
+  //      "menu_search": true
   //    },
   //    "partials": './partials.js',
   //    "layout":  "./view/searchpage.hbs",
@@ -20,7 +22,8 @@ route = [
   // },
   {
     data: {
-      "title": "Alive - detail page"
+      "title": "Alive - detail page",
+      "menu_search": true
     },
     "partials": './partials.js',
     "layout":  "./view/detail.hbs",
@@ -28,7 +31,8 @@ route = [
   },
   {
     data: {
-      "title": "Alive - register page"
+      "title": "Alive - register page",
+      "menu_register": true
     },
     "partials": './partials.js',
     "layout":  "./view/register.hbs",
@@ -36,7 +40,8 @@ route = [
   },
   {
     data: {
-      "title": "Alive - setting page"
+      "title": "Alive - setting page",
+      "menu_profile": true
     },
     "partials": './partials.js',
     "layout":  "./view/setting.hbs",
@@ -44,23 +49,25 @@ route = [
   },
   {
     data: {
-      "title": "Alive - login page"
+      "title": "Alive - login page",
+      "menu_logn": true
     },
     "partials": './partials.js',
     "layout":  "./view/login.hbs",
     "filename": "./docs/login.php"
   },
-  {
-    data: {
-      "title": "Alive - post job page"
-    },
-    "partials": './partials.js',
-    "layout":  "./view/postjob.hbs",
-    "filename": "./docs/postjob.php"
-  },
   // {
   //   data: {
-  //     "title": "Alive - profile page"
+  //     "title": "Alive - post job page"
+  //   },
+  //   "partials": './partials.js',
+  //   "layout":  "./view/postjob.hbs",
+  //   "filename": "./docs/postjob.php"
+  // },
+  // {
+  //   data: {
+  //     "title": "Alive - profile page",
+  //     "menu_profile": true
   //   },
   //   "partials": './partials.js',
   //   "layout":  "./view/profile.hbs",
@@ -68,7 +75,8 @@ route = [
   // },
   {
     data: {
-      "title": "Alive - post job form"
+      "title": "Alive - post job form",
+      "menu_job": true
     },
     "partials": './partials.js',
     "layout":  "./view/PostJobForm.hbs",
@@ -76,7 +84,8 @@ route = [
   },
   {
     data: {
-      "title": "Alive - searchbar page"
+      "title": "Alive - searchbar page",
+      "menu_search": true
     },
     "partials": './partials.js',
     "layout":  "./view/searchbar.hbs",
@@ -84,7 +93,8 @@ route = [
   },
   {
     data: {
-      "title": "Alive - modify job"
+      "title": "Alive - modify job",
+      "menu_job": true
     },
     "partials": './partials.js',
     "layout":  "./view/updatejob.hbs",
