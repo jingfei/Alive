@@ -45,15 +45,8 @@
                 <th>Time</th>
               </tr>
             </thead>
+              <?php getJobs(); ?>
             <tbody>
-          <?php while($row=$result2->fetch_assoc()) { ?>
-          <tr onClick="location.href='detail?jobid=<?php echo $row["id"]; ?>';">
-            <td><?php echo $row["job_name"]; ?></td>
-            <td><?php echo $row["job_description"]; ?></td>
-            <td><?php echo $row["org_name"]; ?></td>
-            <td><?php echo $row["time"]; ?></td>
-          </tr>
-          <?php } ?>
         </tbody>
          </table>
 

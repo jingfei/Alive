@@ -58,14 +58,6 @@ route = [
   },
   // {
   //   data: {
-  //     "title": "Alive - post job page"
-  //   },
-  //   "partials": './partials.js',
-  //   "layout":  "./view/postjob.hbs",
-  //   "filename": "./docs/postjob.php"
-  // },
-  // {
-  //   data: {
   //     "title": "Alive - profile page",
   //     "menu_profile": true
   //   },
