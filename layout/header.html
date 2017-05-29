@@ -9,7 +9,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li {{#if menu_start}}class="active"{{/if}}><a href="#">Start Volunteering <span class="sr-only">(current)</span></a></li>
+        <li {{#if menu_start}}class="active"{{/if}}><a href="./">Start Volunteering <span class="sr-only">(current)</span></a></li>
         <li {{#if menu_search}}class="active"{{/if}}> <a href="./searchpage.php">Find Opportunities</a></li>
         <?php
           if(isset($_SESSION["id"]) && !empty($_SESSION["id"])) {
