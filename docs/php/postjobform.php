@@ -23,6 +23,7 @@ function handlename($data){
     else {
       $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description');";
       $conn->query($sql);
+      echo '<script>location.href="profile";</script>';
   }
 
 }
