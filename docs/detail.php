@@ -28,7 +28,11 @@
         <img src="..." style="width:100%;height:50%">
         <div id="detail-optionbutton">
         <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest">Send Volunteer Request</button>
-        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark">Save as bookmark</button>
+        <?php
+        if($_SESSION["id"] == $row["userid"]){
+          ?>
+        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onclick="location.href='updatejob';">Edit job</button>
+        <?php } ?>
         </div>
       </div>
     </div>
