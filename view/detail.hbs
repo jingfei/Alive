@@ -30,12 +30,14 @@
       <div class="col-md-5">
         <img src="..." style="width:100%;height:50%">
         <div id="detail-optionbutton">
-        <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest">Send Volunteer Request</button>
+        <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest" onClick="window.location.href='mailto:<?php echo $userresult["email"]?>'">Send Volunteer Request</button>
         <?php
         if($_SESSION["id"] == $row["userid"]){
           ?>
         <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onClick="location.href='updatejob';">Edit job</button>
-        <?php } ?>
+        <?php
+        }
+        ?>
         </div>
       </div>
     </div>

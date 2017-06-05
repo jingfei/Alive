@@ -14,4 +14,10 @@ if($_SERVER[REQUEST_METHOD]=="GET" && strlen($search_result)>0) {
     $row=$result->fetch_assoc();
   }
 }
+$userid=$row["userid"];
+$users="SELECT * FROM users WHERE id=$userid";
+$result=$conn->query($users);
+if($result->num_rows>0){
+  $userresult=$result->fetch_assoc();
+}
 ?>
