@@ -15,8 +15,11 @@ function handlename($data){
     $website= handlename($_POST["website"]);
     $job_description= handlename($_POST["job_description"]);
 
-      $sql="UPDATE jobs SET job_name='$job_name',age_requirement='$age_requirement',time='$time',address='$address',phone_number='$phone_number',website='$website',job_description='$job_description' WHERE userid=$sess";
-      $conn->query($sql);
+      $search_result= handlename($_GET["jobid"]);
+      if($_SERVER[REQUEST_METHOD]=="GET" && strlen($search_result)>0) {
+        $sql="UPDATE jobs SET job_name='$job_name',age_requirement='$age_requirement',time='$time',address='$address',phone_number='$phone_number',website='$website',job_description='$job_description' WHERE id=$search_result";
+        $result=$conn->query($sql);
+}
 }
 
 @include "db.php";
