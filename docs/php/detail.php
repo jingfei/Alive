@@ -20,4 +20,9 @@ $result=$conn->query($users);
 if($result->num_rows>0){
   $userresult=$result->fetch_assoc();
 }
+/*
+function toUsermail() {
+  location.href='mailto: echo $userresult["email"]';
+}
+*/
 ?>

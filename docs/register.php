@@ -42,6 +42,9 @@
           <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input" name="birthday">
         </div>
       </div><br>
+      Select Profile Picture to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
       <input type="submit">
     </form>
   </div>

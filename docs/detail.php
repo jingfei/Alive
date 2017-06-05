@@ -27,23 +27,29 @@
       <div class="col-md-5">
         <img src="..." style="width:100%;height:50%">
         <div id="detail-optionbutton">
-        <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest" onclick="window.location.href='mailto:<?php echo $userresult["email"]?>'">Send Volunteer Request</button>
+        <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest" onclick="toUsermail();">Send Volunteer Request</button>
         <?php
         if($_SESSION["id"] == $row["userid"]){
-          ?>
+        ?>
         <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onclick="location.href='updatejob';">Edit job</button>
         <?php
-      }
+        }
         ?>
         </div>
       </div>
     </div>
     <div id="detail-Location" class="content" style="text-align:center">
-      <iframe src="https://www.google.com/maps?q=<?php echo $row['address']; ?>&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps?output=embed&amp;q=<?php echo $row['address']; ?>" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
     </div>
     <div id="detail-Reviews" class="content" style="text-align:center;">
       <div class="fb-comments" data-href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" data-width="1000" data-numposts="3"></div>
     </div>
-        <div id="footer" class="row">        <div class="col-md-6" style="padding: 10px 40px;">          <p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>  &nbsp;Alive- Appreciate Love in Volunteering Everyday</a></p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank">          </a><p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"></a><a href="https://twitter.com/alive_volunteer" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i>  &nbsp;@alive_volunteer</a></p><a href="https://twitter.com/alive_volunteer" target="_blank">          </a><p><a href="https://twitter.com/alive_volunteer" target="_blank"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a><a href="mailto:alive-volunteer@googlegroups.com" target="_blank"> &nbsp;alive-volunteer@googlegroups.com</a></p>        </div>        <div class="col-md-6">          <h3>About this company</h3>        </div>      </div>
+    <script>
+function toUsermail(){
+  mail = '<?php echo $userresult["email"]; ?>';
+  location.href='mailto:'+mail;
+}
+    </script>
+        <div id="footer" class="row">        <div class="col-md-6" style="padding: 10px 40px;">          <p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>  &nbsp;Alive- Appreciate Love in Volunteering Everyday</a></p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank">          </a><p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"></a><a href="https://twitter.com/alive_volunteer" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i>  &nbsp;@alive_volunteer</a></p><a href="https://twitter.com/alive_volunteer" target="_blank">          </a><p><a href="https://twitter.com/alive_volunteer" target="_blank"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a><a href="mailto:alive-volunteer@googlegroups.com" target="_blank"> &nbsp;alive-volunteer@googlegroups.com</a></p>        </div>        <div class="col-md-6">          <h3>About this company</h3>        </div>      </div>  
 
 </body></html>
