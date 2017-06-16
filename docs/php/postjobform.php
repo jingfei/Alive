@@ -24,9 +24,10 @@ function handlename($data){
       $sql= "SELECT * FROM jobs";
       $result=$conn->query($sql);
       $num = $result->num_rows;
+      $path = $sess . "_" . $num . ".jpg";
       /* upload image*/
       $target_dir="./User-image/";
-      $target_file = $target_dir . $sess . "_" . $num . ".jpg";
+      $target_file = $target_dir . $path;
       $uploadOk = 1;
       $filename = $target_dir . "test.txt";
       $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -51,7 +52,7 @@ function handlename($data){
       // if everything is ok, try to upload file
       } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-          $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description');";
+          $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description,path) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description','$path');";
           $conn->query($sql);
           echo '<script>alert("Success!"); location.href="profile";</script>';
         } else {
