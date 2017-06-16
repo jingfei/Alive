@@ -52,7 +52,7 @@ function handlename($data){
       // if everything is ok, try to upload file
       } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-          $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description,path) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description','$path');";
+          $sql="INSERT INTO jobs (userid, job_name,age_requirement,org_name,time,address,phone_number,website,job_description,path) VALUES($sess,'$job_name','$age_requirement','$org_name','$address','$time','$phone_number','$website','$job_description','$target_file');";
           $conn->query($sql);
           echo '<script>alert("Success!"); location.href="profile";</script>';
         } else {

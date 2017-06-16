@@ -28,7 +28,7 @@
         <div id="detail-jobdescription">Job Description:</div><div><?php echo $row["job_description"]; ?></div>
       </div>
       <div class="col-md-5">
-        <img src="..." style="width:100%;height:50%">
+        <img src="<?php echo $row['path']; ?>" style="width:100%;height:50%">
         <div id="detail-optionbutton">
         <button type="button" class="btn btn-outline-primary" id="detail-sendvolunteerrequest" onClick="toUsermail();">Send Volunteer Request</button>
         <?php
