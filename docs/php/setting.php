@@ -7,6 +7,14 @@ function handlename($data){
 }
 $sess = $_SESSION['id'];
 
+$sql= "SELECT * FROM users WHERE id=$sess";
+$result=$conn->query($sql);
+$email = "";
+if($result->num_rows>0){
+  $row=$result->fetch_assoc();
+  $email = $row["email"];
+}
+
 if($_SERVER[REQUEST_METHOD]== POST){
   $firstname = handlename($_POST["firstname"]);
   $lastname = handlename($_POST["lastname"]);
@@ -59,11 +67,5 @@ if($_SERVER[REQUEST_METHOD]== POST){
       echo '<script>location.href="profile";</script>';
     }
   }
-}
-
-$sql= "SELECT * FROM users WHERE id=$sess";
-$result=$conn->query($sql);
-if($result->num_rows>0){
-  $row=$result->fetch_assoc();
 }
 ?>
