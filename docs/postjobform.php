@@ -71,7 +71,7 @@
       </div>
     </div>
     Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="file" name="fileToUpload" id="fileToUpload" style="text-align:center; padding-left:320px">
     <div class="control-group" style="text-align: center">
       <!-- Post Button -->
       <div class="controls">
