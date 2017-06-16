@@ -21,7 +21,7 @@ function getJobs($result) {
           <div class="thumbnail">
             <img src="..." alt="...">
             <div class="caption">
-              <h3>Search Result 1: '.$row["job_name"].'</h3>
+              <h3>Search Result: '.$row["job_name"].'</h3>
               <p>Job title: '.$row["job_name"].' </br> Age:'.$row["age_requirement"].'</br> Location: '.$row["address"].'</br></p>
               <p><a href="./detail.php?jobid='.$row["id"].'" class="btn btn-primary" role="button">Click For More Info</a> </p>
             </div>
