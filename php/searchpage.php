@@ -19,7 +19,7 @@ function getJobs($result) {
   while($row=$result->fetch_assoc()){
     echo '<div class="col-sm-6 col-md-4" style="height:300px">
           <div class="thumbnail">
-            <img src="..." alt="...">
+            <img src="'.$row["path"].'" alt="...">
             <div class="caption">
               <h3>Search Result: '.$row["job_name"].'</h3>
               <p>Job title: '.$row["job_name"].' </br> Age:'.$row["age_requirement"].'</br> Location: '.$row["address"].'</br></p>
