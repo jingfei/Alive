@@ -18,6 +18,13 @@
           <p>Last Name</p>
           <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name" name="lastname">
         </div><br>
+        <div class="form-group">
+          <p>Job</p>
+          <select class"form-control"="" id="exampleInputName2" name="job">
+            <option>Job Provider</option>
+            <option>Applier</option>
+          </select>
+        </div><br>
       <div class="form-group row">
         <p>Email</p>
         <div class="col-xs-10">
