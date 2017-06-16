@@ -17,7 +17,7 @@ $result= $conn->query($sql);
 
 function getJobs($result) {
   while($row=$result->fetch_assoc()){
-    echo '<div class="col-sm-6 col-md-4" style="height:300px">
+    echo '<div class="col-sm-6 col-md-4" style="width:300px">
           <div class="thumbnail">
             <img src="'.$row["path"].'" alt="...">
             <div class="caption">
