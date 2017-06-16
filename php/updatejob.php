@@ -27,7 +27,8 @@ if($_SERVER[REQUEST_METHOD]== "POST" && strlen($search_result)>0){
 
   $sql = "UPDATE jobs SET job_name='$job_name',age_requirement='$age_requirement',time='$time',address='$address',phone_number='$phone_number',website='$website',job_description='$job_description' WHERE id=$search_result";
   $result=$conn->query($sql);
-echo '<script>location.href="profile";</script>';
+  echo '<script>alert("updated successfully");</script>';
+  echo '<script>location.href="detail?jobid='.$search_result.'";</script>';
 }
 
 ?>
