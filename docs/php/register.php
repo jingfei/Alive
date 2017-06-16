@@ -13,7 +13,6 @@ if($_SERVER[REQUEST_METHOD]== POST){
   $password= handlename($_POST["password"]);
   $phonenumber= handlename($_POST["phonenumber"]);
   $birthday= handlename($_POST["birthday"]);
-  $job= handlename($_POST["job"]);
   if(empty($firstname) || empty($lastname) || empty($email) ||empty($password) ||empty($birthday)){
     echo '<script>alert("please fill in the information");</script>';
   } else {
@@ -50,7 +49,7 @@ if($_SERVER[REQUEST_METHOD]== POST){
       // if everything is ok, try to upload file
       } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-          $sql="INSERT INTO users (first_name,last_name,email,password,phone_number,birthday,job) VALUES('$firstname','$lastname','$email','$password','$phonenumber','$birthday','$job');";
+          $sql="INSERT INTO users (first_name,last_name,email,password,phone_number,birthday) VALUES('$firstname','$lastname','$email','$password','$phonenumber','$birthday');";
           $conn->query($sql);
           echo '<script>alert("Register Successfully!"); location.href="login";</script>';
         } else {
