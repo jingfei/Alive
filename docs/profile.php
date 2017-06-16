@@ -28,6 +28,9 @@
         <div class="col-md-12">
               <p>Birthday: <?php echo  $row["birthday"]; ?></p>
         </div>
+        <div class="col-md-12">
+          <button><a href="./setting.php">setting</a></button>
+        </div>
       </div>
 
     <div class="row col-md-6">
@@ -45,7 +48,7 @@
             <tbody>
         </tbody>
          </table>
-         
+
       </div>
     </div>
   </div>

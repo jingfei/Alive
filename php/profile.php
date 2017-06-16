@@ -19,6 +19,7 @@ function getJobs($result) {
             <td>'.$row["time"].'</td>
           </tr>';
   }
+  echo '<script>alert("updated successfully");</script>';
 }
 
 ?>

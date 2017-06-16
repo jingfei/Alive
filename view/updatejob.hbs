@@ -6,7 +6,7 @@
   <body>
     {{> header}}
     <?php @include "php/updatejob.php"; ?>
-<form class="form-horizontal" action='./updatejob.php' method="POST">
+<form class="form-horizontal" action='./updatejob.php?jobid=<?php echo $search_result; ?>' method="POST">
   <fieldset>
     <div id="legend" style="text-align: center">
       <h3>Modify Your Job</h3>

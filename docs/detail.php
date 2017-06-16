@@ -31,7 +31,7 @@
         <?php
         if($_SESSION["id"] == $row["userid"]){
         ?>
-        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onclick="location.href='updatejob';">Edit job</button>
+        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onclick="toUpdatejob();">Edit job</button>
         <?php
         }
         ?>
@@ -48,6 +48,10 @@
 function toUsermail(){
   mail = '<?php echo $userresult["email"]; ?>';
   location.href='mailto:'+mail;
+}
+function toUpdatejob() {
+  jobid = '<?php echo $search_result; ?>';
+  location.href='updatejob?jobid='+jobid;
 }
     </script>
         <div id="footer" class="row">        <div class="col-md-6" style="padding: 10px 40px;">          <p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>  &nbsp;Alive- Appreciate Love in Volunteering Everyday</a></p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank">          </a><p><a href="https://www.facebook.com/Alive-Appreciate-Love-in-Volunteering-Everyday-100729750470795/" target="_blank"></a><a href="https://twitter.com/alive_volunteer" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i>  &nbsp;@alive_volunteer</a></p><a href="https://twitter.com/alive_volunteer" target="_blank">          </a><p><a href="https://twitter.com/alive_volunteer" target="_blank"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a><a href="mailto:alive-volunteer@googlegroups.com" target="_blank"> &nbsp;alive-volunteer@googlegroups.com</a></p>        </div>        <div class="col-md-6">          <h3>About this company</h3>        </div>      </div>  

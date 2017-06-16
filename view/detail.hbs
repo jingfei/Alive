@@ -34,7 +34,7 @@
         <?php
         if($_SESSION["id"] == $row["userid"]){
         ?>
-        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onClick="location.href='updatejob';">Edit job</button>
+        <button type="button" class="btn btn-outline-primary" id="detail-saveasbookmark" onClick="toUpdatejob();">Edit job</button>
         <?php
         }
         ?>
@@ -51,6 +51,10 @@
 function toUsermail(){
   mail = '<?php echo $userresult["email"]; ?>';
   location.href='mailto:'+mail;
+}
+function toUpdatejob() {
+  jobid = '<?php echo $search_result; ?>';
+  location.href='updatejob?jobid='+jobid;
 }
     </script>
   {{> footer }}
