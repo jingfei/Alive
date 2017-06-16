@@ -8,7 +8,7 @@
     <div id="Registration" style="text-align:center">
       <h1>Profile Setting</h1>
       <div id="Registration-forms">
-      <form class="form-inline" id="name" method="post">
+      <form class="form-inline" id="name" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <p>First Name</p>
           <input type="text" class="form-control" value="<?php echo $row['first_name']; ?>" id="exampleInputName2" placeholder="First Name" name="firstname">
@@ -39,6 +39,8 @@
       <div class="form-group row">
         <p>Birthday</p> <p><?php echo $row["birthday"]; ?></p>
       </div><br>
+      Select Profile Picture to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload" style="text-align:center; padding-left:120px">
       <input type="submit">
     </form>
   </div>
