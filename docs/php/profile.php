@@ -6,7 +6,6 @@ $result=$conn->query($sql);
 if($result->num_rows>0){
   $row=$result->fetch_assoc();
 }
-
 $sql2="SELECT * FROM jobs WHERE userid=$sess";
 $result2=$conn->query($sql2);
 
@@ -19,6 +18,10 @@ function getJobs($result) {
             <td>'.$row["time"].'</td>
           </tr>';
   }
+}
+
+function getImageHTML($email){
+  echo '<img src="User-image/'.$email.'.jpg" style="text-align:right;" width="100px">';
 }
 
 ?>

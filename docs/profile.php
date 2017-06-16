@@ -8,7 +8,7 @@
       <div class="row col-md-6">
         <h2>My Profile</h2>
         <div id="profile-image">
-          <img src="./images/profile.svg" style="text-align:right;" height="100px" width="100px">
+          <?php echo getImageHTML($row["email"]); ?>
         </div>
         <div class="col-md-12">
           <p> Name: <?php echo $row["first_name"]." ".$row["last_name"]; ?></p>
